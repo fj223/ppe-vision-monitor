@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Environment variables (secrets)
+.env
+backend/.env
+frontend/.env
+
+# Node
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+frontend/dist/
+frontend/build/
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Large media files
+backend/test_ppe.mp4
+backend/test_ppe2.mp4
+backend/test_ppe_backup.mp4
+backend/best.pt
+
+# Logs
+*.log
