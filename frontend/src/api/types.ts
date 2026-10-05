@@ -24,7 +24,7 @@ export interface ViolationEvent {
   // Extended research fields
   bounding_boxes: BoundingBox[]
   processing_latency: number  // milliseconds
-  raw_api_response: Record<string, unknown>
+  inference_metadata: Record<string, unknown>
   created_at: string
 }
 

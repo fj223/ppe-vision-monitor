@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+datasets/
+runs/
+snapshots/
+models/
+*.png
+*.mp4
+evaluation_results.json

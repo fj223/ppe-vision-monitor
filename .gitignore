@@ -10,6 +10,7 @@ build/
 .eggs/
 *.egg
 .venv/
+.venv-*/
 venv/
 env/
 
@@ -53,3 +54,14 @@ backend/best.pt
 
 # Logs
 *.log
+backend/datasets/
+backend/runs/
+backend/models/*.pt
+backend/snapshots/violations/
+backend/yolov8n.pt
+
+# Local source datasets and generated dataset archives
+archive/
+ultralytics_ppe_dataset/
+ultralytics_ppe_dataset.tar.gz
+ultralytics_ppe_dataset.zip

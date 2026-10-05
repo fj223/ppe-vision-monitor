@@ -1,7 +1,7 @@
 /**
  * LatencyBadge
  *
- * Displays the Yandex Vision API processing latency with colour coding:
+ * Displays local YOLOv8 inference latency with colour coding:
  *   green  < 1 000 ms  — fast, within real-time budget
  *   yellow 1 000–3 000 ms  — acceptable but degraded
  *   red    > 3 000 ms  — slow, warrants investigation
@@ -56,7 +56,7 @@ export default function LatencyBadge({ processingLatency, verbose = false }: Pro
         <span className={`text-sm font-mono font-bold ${text}`}>
           {processingLatency.toLocaleString()} ms
         </span>
-        <span className="text-xs text-gray-500">Vision API latency</span>
+        <span className="text-xs text-gray-500">YOLOv8 latency</span>
       </div>
     )
   }
@@ -64,7 +64,7 @@ export default function LatencyBadge({ processingLatency, verbose = false }: Pro
   return (
     <span
       className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-mono font-semibold ring-1 ${bg} ${text} ${ring}`}
-      title={`Vision API latency: ${processingLatency} ms`}
+      title={`YOLOv8 inference latency: ${processingLatency} ms`}
     >
       {processingLatency.toLocaleString()} ms
     </span>

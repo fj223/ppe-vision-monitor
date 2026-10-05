@@ -179,7 +179,7 @@ function ViolationDetail({
 
       {/* Processing latency — verbose badge for research metrics */}
       <div>
-        <p className="text-xs text-gray-400 mb-1">Vision API Performance</p>
+        <p className="text-xs text-gray-400 mb-1">YOLOv8 inference performance</p>
         <LatencyBadge processingLatency={event.processing_latency} verbose />
       </div>
 
@@ -203,10 +203,10 @@ function ViolationDetail({
       {/* Raw API response — collapsible, for research / data replay */}
       <details className="group">
         <summary className="text-xs text-gray-400 cursor-pointer hover:text-gray-200 select-none">
-          Raw API response (click to expand)
+          Inference metadata (click to expand)
         </summary>
         <pre className="mt-2 text-xs bg-gray-900 rounded p-3 overflow-x-auto text-gray-400 max-h-48">
-          {JSON.stringify(event.raw_api_response, null, 2)}
+          {JSON.stringify(event.inference_metadata, null, 2)}
         </pre>
       </details>
     </div>

@@ -91,6 +91,7 @@ export interface UploadAnalysisResult {
   is_violation: boolean
   violation_types: string[]
   detected_ppe: string[]
+  inference_metadata: Record<string, unknown>
   bounding_boxes: import('./types').BoundingBox[]
   image_base64: string
 }

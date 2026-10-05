@@ -3,7 +3,7 @@
  *
  * Fetches today's violation statistics and renders:
  *   - Total violation count
- *   - Average Vision API processing latency
+ *   - Average local YOLOv8 inference latency
  *   - Bar chart of violations by type (recharts)
  * (Requirement 6.6)
  */
@@ -84,7 +84,7 @@ export default function StatsChart() {
             {Math.round(stats.avg_processing_latency_ms)}
             <span className="text-sm font-normal text-gray-400 ml-1">ms</span>
           </p>
-          <p className="text-xs text-gray-400 mt-0.5">Avg Vision API latency</p>
+          <p className="text-xs text-gray-400 mt-0.5">Avg YOLOv8 latency</p>
         </div>
       </div>
 
